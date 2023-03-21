@@ -1,0 +1,73 @@
+body{
+  background-color: #fde9ff; //pink
+}
+
+h1{
+  color:#16594a; //darkgreen
+  font-family:'montserrat', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2{
+  color:#bf4f51; //red
+  font-family:'montserrat', sans-serif;
+  font-weight:bold;
+  text-align:center;
+}
+
+h3{
+  color:#ffffff; //white
+  font-family:'montserrat', sans-serif;
+  font-weight:bold;
+  text-align: center;
+}
+
+p{
+  color: black;
+  font-family:'Lato', sans-serif;
+  text-align:center;
+}
+
+.bg-image{
+  background-image:url('/images/paws.png');
+  background-size:cover;
+}
+
+.justify{
+  text-align:justify;
+}
+
+.btn-custom{
+  background-color:#ff914d; //orange
+  color: white;
+  font-family:'montserrat', sans-serif;
+  font-weight: bold;
+}
+/*NAV*/
+#current-page{
+  font-weight:bold;
+}
+
+/*footer*/
+.footer-p{
+  color: white;
+}
+
+/* animal cards*/
+.cstm-height-card .card-img-top {
+  height: 100%;
+  object-fit: cover;
+}
+
+.card{
+  background-color:#99cccc;
+}
+
+.red-heart {
+  color: red;
+}
+
+.carousel{
+  max-width:60%;
+}
