@@ -81,6 +81,9 @@ font-family:'montserrat', sans-serif;
 .card{
   background-color:#99cccc;
 }
+.card-title{
+  color:#16594a;
+}
 /*
 .car{
   max-width:80%;
