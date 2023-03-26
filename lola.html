@@ -54,7 +54,7 @@
       <li class="nav-item">
         <a class="nav-link" href="index.html">HOME</a>
       </li>
-      <li class="nav-item active" id="current-page">
+      <li class="nav-item">
         <a class="nav-link" href="aboutus.html">ABOUT US</a>
       </li>
       <li class="nav-item">
@@ -63,82 +63,88 @@
       <li class="nav-item">
         <a class="nav-link" href="adoptus.html">ADOPT US</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="dogs.html">DOGS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="cats.html">CATS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="otherpets.html">OTHER PETS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="fosterus.html">FOSTER US</a>
+      <li class="nav-item dropdown active" id="current-page">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          PETS
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="cats.html">CATS</a></li>
+          <li><a class="dropdown-item" href="dogs.html">DOGS</a></li>
+          <li><a class="dropdown-item" href="otherpets.html">OTHER PETS</a></li>
+        </ul>
       </li>
     </ul>
   </div>
 </nav>
-<h1> LOLA</h1>
-<div id="carouselExampleIndicators" class="carousel slide mx-auto" data-bs-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
-    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/lola1.png" class="img-fluid" alt="Image 1">
+
+<h1 class="mt-5 mb-5"> LOLA</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mb-5">
+      <div id="carouselExampleIndicators" class="carousel slide mx-5" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/lola1.jpg" class="img-fluid" alt="Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="images/lola2.jpg" class="img-fluid" alt="Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/lola3.jpg" class="img-fluid" alt="Image 3">
+          </div>
+          <div class="carousel-item">
+            <img src="images/lola4.jpg" class="img-fluid" alt="Image 4">
+          </div>
+          <div class="carousel-item">
+            <img src="images/lola5.jpg" class="img-fluid" alt="Image 5">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="images/lola2.png" class="img-fluid" alt="Image 2">
-    </div>
-    <div class="carousel-item">
-      <img src="images/lola3.png" class="img-fluid" alt="Image 3">
-    </div>
-    <div class="carousel-item">
-      <img src="images/lola4.png" class="img-fluid" alt="Image 4">
-    </div>
-    <div class="carousel-item">
-      <img src="images/lola5.png" class="img-fluid" alt="Image 5">
+
+    <!-- insert  pet -->
+    <div class="col-md-6">
+      <p class="justify mb-5">Lola is beauty and grace, she's a distinguished older cat looking for someone
+        who wants a little extra pest control and doesn't mind space. Lola keeps busy in her foster home guarding the perimeter
+        from pests and mostly keeps to herself. When you win her trust she enjoys a nice
+        head scratch. Due to her introverted nature Lola needs a home where everyone can show her
+        respect, her forever home cannot have children or dogs. </p>
+      <div class="text-center mb-5">
+        <a href="adoptus.html">
+          <button class="btn btn-custom btn-lg shadow"> ADOPTION INFORMATION</button>
+        </a>
+      </div>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </a>
-</div>
-
-<div class="container">
-<p class="justify"> Lola is beauty and grace, she's a distinguished older cat looking for someone
-  who wants a little extra pest control and doesn't mind space. Lola keeps busy in her foster home guarding the perimeter
-  from pests and mostly keeps to herself. When you win her trust she enjoys a nice
-  head scratch. Due to her introverted nature Lola needs a home where everyone can show her
-  respect, her forever home cannot have children or dogs. </p>
-<div class="text-center mb-3">
-<a href="adoptus.html">
-  <button class="btn btn-custom btn-lg shadow"> ADOPTION INFORMATION</button>
-</a>
-</div>
 </div>
 
 
 <!-- footer -->
 <div class="container-fluid" style="background-color:#16594a;">
   <div class= "row">
-    <div class= "col-sm-4">
+    <div class= "col-sm-4 mt-2 mb-2">
       <h3>HOURS </h3>
       <p class="footer-p"> Walk-in & meet our animals! <br> Monday- Saturday 9-5</p>
     </div>
     <div class= "col-sm-4 d-flex justify-content-center align-items-center">
       <button class="btn btn-custom mt-2 mb-2">DONATE</button>
     </div>
-    <div class= "col-sm-4">
+    <div class= "col-sm-4 mt-2 mb-2">
       <h3>LOCATION </h3>
       <p class= "footer-p"> 264 Browns River Road <br> Essex, Vermont</p>
     </div>

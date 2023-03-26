@@ -63,51 +63,45 @@
       <li class="nav-item">
         <a class="nav-link" href="adoptus.html">ADOPT US</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="dogs.html">DOGS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="cats.html">CATS</a>
-      </li>
-      <li class="nav-item active" id="current-page">
-        <a class="nav-link" href="otherpets.html">OTHER PETS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="fosterus.html">FOSTER US</a>
+      <li class="nav-item dropdown active" id="current-page">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          PETS
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="cats.html">CATS</a></li>
+          <li><a class="dropdown-item" href="dogs.html">DOGS</a></li>
+          <li><a class="dropdown-item" href="otherpets.html">OTHER PETS</a></li>
+        </ul>
       </li>
     </ul>
   </div>
 </nav>
 
+<h1 class="mt-5 mb-5">OTHER PETS</h1>
+
 <div class="container">
 		<div class="row mb-5 cstm-height-card">
-			<div class="col-md-4">
+			<div class="col-md-4 mb-5">
 				<div class="card">
-					<img src="images/hamster1.png" class="card-img-top" alt="...">
-					<div class="card-body">
+					<img src="images/hamster1.jpg" class="card-img-top" alt="...">
+					<div class="card-body text-center">
 						<h3 class="card-title">NIBBLES</h3>
 						<p class="card-text">Male - Hamster - Age 1</p>
             <a href="nibbles.html">
 						        <button class="btn btn-sm btn-custom">LEARN MORE</button>
             </a>
-          <div class="text-end">
-            <i class="fa-regular fa-heart"></i>
-          </div>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 mb-5">
 				<div class="card">
-					<img src="images/bunny1.png" class="card-img-top" alt="...">
-					<div class="card-body">
+					<img src="images/bunny1.jpg" class="card-img-top" alt="...">
+					<div class="card-body text-center">
 						<h3 class="card-title">BUBBLES</h3>
 						<p class="card-text">Male - Black Rabbit - Age 10</p>
             <a href="bubbles.html">
 						<button class="btn btn-sm btn-custom">LEARN MORE</button>
             </a>
-          <div class="text-end">
-            <i class="fa-regular fa-heart"></i>
-          </div>
 					</div>
 				</div>
 			</div>
@@ -132,14 +126,14 @@
 <!-- footer -->
 <div class="container-fluid" style="background-color:#16594a;">
   <div class= "row">
-    <div class= "col-sm-4">
+    <div class= "col-sm-4 mt-2 mb-2">
       <h3>HOURS </h3>
       <p class="footer-p"> Walk-in & meet our animals! <br> Monday- Saturday 9-5</p>
     </div>
     <div class= "col-sm-4 d-flex justify-content-center align-items-center">
       <button class="btn btn-custom mt-2 mb-2">DONATE</button>
     </div>
-    <div class= "col-sm-4">
+    <div class= "col-sm-4 mt-2 mb-2">
       <h3>LOCATION </h3>
       <p class= "footer-p"> 264 Browns River Road <br> Essex, Vermont</p>
     </div>
@@ -148,6 +142,7 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <script src="js/javascript.js"></script>
 <!--custom JS-->
 

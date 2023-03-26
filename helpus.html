@@ -63,17 +63,15 @@
       <li class="nav-item">
         <a class="nav-link" href="adoptus.html">ADOPT US</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="dogs.html">DOGS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="cats.html">CATS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="otherpets.html">OTHER PETS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="fosterus.html">FOSTER US</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          PETS
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="cats.html">CATS</a></li>
+          <li><a class="dropdown-item" href="dogs.html">DOGS</a></li>
+          <li><a class="dropdown-item" href="otherpets.html">OTHER PETS</a></li>
+        </ul>
       </li>
     </ul>
   </div>
@@ -82,48 +80,68 @@
 
 
 <div class="container" style="background-color: #fde9ff;">
-  <h1>WAYS TO HELP US</h1>
+  <h1 class="mt-5 mb-5">WAYS TO HELP US</h1>
   <div class="row">
       <div class="col-sm-6">
-        <a href="...">
-          <h2>DONATE></h2>
-        </a>
+          <h2>DONATE</h2>
           <p class="justify">Fur Friends is 100% non-profit! Donations and corporate sponsors fund 60% of our operation, and the rest is raised from our two annual events- the spring Dog Walk and fall Harvest Festival. Last year we had enough bequests to build a catio for our feline friends!</p>
-        </div>
-      <div class="col-sm-6">
-        <a href="mailto:adopt@furfriends.org">
-          <h2> VOLUNTEER> </h2>
+        <div class="text-center">
+        <a href="..."
+          <button class="btn btn-custom">DONATE TODAY</button>
         </a>
-        <p class="justify">Become a Fur Friends regular! Our regulars change lives. Regulars walk, play with, and help take care of our animals… regularly. Our animals will come to know and love you and you’ll share in the deep satisfaction of uniting animals with their forever people.
-          Volunteers also help run our spring Dog Walk and Fall Harvest Festival- there are countless ways to get involved that work with your schedule. Contact our volunteer coordinator for more info.</p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <img src="images/highfive.jpg" class="img-fluid mt-5">
+      </div>
       </div>
 
 <div class="container mb-5">
   <div class="row">
     <div class="col-sm-6">
-      <a href="fosterus.html">
-        <h2>FOSTER></h2>
+        <h2 class="mt-5">FOSTER</h2>
+        <p class="justify">When you can’t adopt, fostering can be the next best thing!
+          Some animals are overwhelmed in the shelter environment, and just like when humans are
+          overwhelmed, they are not themselves. When stressed out animals spend time in a foster
+          home, we often see their whole personality change for the better. Fosters give our
+          animals the chance to relax and show their true colors so they're ready when the right
+          adopter comes along.
+          <br>
+          Fosters play a huge role in the adoption of harder to place animals, they give
+          potential adopters the chance to understand how the pet would behave in their
+          home so there are very few surprises and endless happy tails.
+          </p>
+      <div class="text-center">
+      <a href="mailto:adopt@furfriends.org">
+        <button class="btn btn-custom">CONTACT TO FOSTER</button>
       </a>
-        <p class="justify">When you can’t adopt, fostering can be the next best thing! Some animals are extra stressed in the shelter environment and would love to warm your heart and practice their manners for a few months while they wait for their forever home.</p>
+      </div>
     </div>
     <div class="col-sm-6">
-      <img src="images/highfive.jpeg" class="img-fluid mt-5">
+      <h2 class="mt-5"> VOLUNTEER</h2>
+      <p class="justify">Become a Fur Friends regular! Our regulars change lives. Regulars walk, play with, and help take care of our animals… regularly. Our animals will come to know and love you and you’ll share in the deep satisfaction of uniting animals with their forever people.
+        Volunteers also help run our spring Dog Walk and Fall Harvest Festival- there are countless ways to get involved that work with your schedule. Contact our volunteer coordinator for more info.</p>
+      <div class="text-center">
+        <a href="mailto:adopt@furfriends.org">
+          <button class="btn btn-custom">CONTACT TO VOLUNTEER</button>
+        </a>
     </div>
   </div>
 </div>
+  </div>
+</div>
 
-
-<!-- footer -->
+    <!-- footer -->
 <div class="container-fluid" style="background-color:#16594a;">
   <div class= "row">
-    <div class= "col-sm-4">
+    <div class= "col-sm-4 mt-2 mb-2">
       <h3>HOURS </h3>
       <p class="footer-p"> Walk-in & meet our animals! <br> Monday- Saturday 9-5</p>
     </div>
     <div class= "col-sm-4 d-flex justify-content-center align-items-center">
       <button class="btn btn-custom mt-2 mb-2">DONATE</button>
     </div>
-    <div class= "col-sm-4">
+    <div class= "col-sm-4 mt-2 mb-2">
       <h3>LOCATION </h3>
       <p class= "footer-p"> 264 Browns River Road <br> Essex, Vermont</p>
     </div>
@@ -132,6 +150,7 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <script src="js/javascript.js"></script>
 <!--custom JS-->
 

@@ -54,7 +54,7 @@
       <li class="nav-item">
         <a class="nav-link" href="index.html">HOME</a>
       </li>
-      <li class="nav-item active" id="current-page">
+      <li class="nav-item">
         <a class="nav-link" href="aboutus.html">ABOUT US</a>
       </li>
       <li class="nav-item">
@@ -63,34 +63,35 @@
       <li class="nav-item">
         <a class="nav-link" href="adoptus.html">ADOPT US</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="dogs.html">DOGS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="cats.html">CATS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="otherpets.html">OTHER PETS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="fosterus.html">FOSTER US</a>
+      <li class="nav-item dropdown active" id="current-page">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          PETS
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="cats.html">CATS</a></li>
+          <li><a class="dropdown-item" href="dogs.html">DOGS</a></li>
+          <li><a class="dropdown-item" href="otherpets.html">OTHER PETS</a></li>
+        </ul>
       </li>
     </ul>
   </div>
 </nav>
 
-<h1>NIBBLES</h1>
+<h1 class="mt-5 mb-5">NIBBLES</h1>
 <div class= "container">
   <dic class="row">
-    <img src="images/hamster1.png">
-  </div>
-<div class="container">
-<p class="justify"> Nibbles is a young hamster who loves to be handled and is very personable.
+    <div class="col-md-6 mb-5">
+      <div>
+        <img src="images/hamster1.jpg" class="img-fluid">
+      </div>
+    </div>
+<div class="col-md-6">
+<p class="justify mb-5"> Nibbles is a young hamster who loves to be handled and is very personable.
   Nibbles spends his time running on his hamster wheel and napping. He has good
   hamster manners and enjoys trying new things. </p>
   <div class="text-center mb-3">
   <a href="adoptus.html">
-    <button class="btn btn-custom btn-lg shadow"> ADOPTION INFORMATION</button>
+    <button class="btn btn-custom btn-lg shadow mb-5"> ADOPTION INFORMATION</button>
   </a>
 </div>
 </div>
@@ -99,14 +100,14 @@
 <!-- footer -->
 <div class="container-fluid" style="background-color:#16594a;">
   <div class= "row">
-    <div class= "col-sm-4">
+    <div class= "col-sm-4 mt-2 mb-2">
       <h3>HOURS </h3>
       <p class="footer-p"> Walk-in & meet our animals! <br> Monday- Saturday 9-5</p>
     </div>
     <div class= "col-sm-4 d-flex justify-content-center align-items-center">
       <button class="btn btn-custom mt-2 mb-2">DONATE</button>
     </div>
-    <div class= "col-sm-4">
+    <div class= "col-sm-4 mt-2 mb-2">
       <h3>LOCATION </h3>
       <p class= "footer-p"> 264 Browns River Road <br> Essex, Vermont</p>
     </div>
