@@ -10,37 +10,44 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
      <script src="https://kit.fontawesome.com/097fa911c2.js" crossorigin="anonymous"></script>
+     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId=176300421908111" nonce="wIzU5uf5"></script>
   </head>
 
 <body>
 <!--nav 1-->
 <nav class="navbar navbar-expand" style= "background-color:#99cccc;">
-  <div class="navbar-collapse justify-content-end" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fa-solid fa-phone"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="btn btn-custom">DONATE</a>
-      </li>
-    </ul>
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <div class="nav-logo">
+      <img src="images/nav-logo.png" alt="Logo" style="height:100%;">
+    </div>
+    <div class="navbar-collapse justify-content-end">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tel:8028781758">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:adopt@furfriends.org">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </li>
+        <li class="nav-item mr-2">
+          <a class="btn btn-custom mr-2" href="https://www.paypal.com/donate/?business=WWJVQM32CZNXC&no_recurring=0&item_name=This+donate+button+has+been+set+up+for+a+school+project%2C+Fur+Friends+is+not+a+real+shelter%2C+any+funds+will+go+to+Natalie+Acosta&currency_code=USD"
+             target="_blank">DONATE</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
 
@@ -49,7 +56,7 @@
   <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+  <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="index.html">HOME</a>
@@ -63,11 +70,14 @@
       <li class="nav-item">
         <a class="nav-link" href="adoptus.html">ADOPT US</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">BLOG</a>
+      </li>
       <li class="nav-item dropdown active" id="current-page">
         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           PETS
         </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
           <li><a class="dropdown-item" href="cats.html">CATS</a></li>
           <li><a class="dropdown-item" href="dogs.html">DOGS</a></li>
           <li><a class="dropdown-item" href="otherpets.html">OTHER PETS</a></li>
@@ -82,16 +92,21 @@
   <div class="row">
     <div class="col-md-6 mb-5">
       <div>
-       <img src ="images/bunny1.jpg" class="img-fluid">
+       <img src ="images/bunny1.jpg" class="img-fluid" alt="Small black rabbit sitting in the grass as the sunshines. ">
       </div>
 </div>
   <div class="col-md-6">
-<p class="justify mb-5"> Bubbles was an owner surrender through no fault of his own- just a good example of why we don't give animals as gifts.
+<p class="justify mb-2"> Bubbles was an owner surrender through no fault of his own- just a good example of why we don't give animals as gifts.
   He is a young healthy rabbit who likes to be handled and is friendly to everyone he meets. </p>
-<div class="text-center mb-3">
-<a href="adoptus.html">
-  <button class="btn btn-custom btn-lg shadow mb-5"> ADOPTION INFORMATION</button>
-</a>
+    <div class="d-flex justify-content-center">
+      <div class="fb-share-button mb-3 text-center" onclick="shareOnFacebook()" data-href="https://natbatcat.github.io/blog.html">
+        Share On Facebook
+      </div>
+    </div>
+    <div class="text-center mb-3">
+      <a href="adoptus.html">
+        <button class="btn btn-custom btn-lg shadow mb-5"> ADOPTION INFORMATION</button>
+      </a>
 </div>
 </div>
 </div>
@@ -106,7 +121,8 @@
       <p class="footer-p"> Walk-in & meet our animals! <br> Monday- Saturday 9-5</p>
     </div>
     <div class= "col-sm-4 d-flex justify-content-center align-items-center">
-      <button class="btn btn-custom mt-2 mb-2">DONATE</button>
+      <button class="btn btn-custom mt-2 mb-2" onclick="window.open('https://www.paypal.com/donate/?business=WWJVQM32CZNXC&no_recurring=0&item_name=This+donate+button+has+been+set+up+for+a+school+project%2C+Fur+Friends+is+not+a+real+shelter%2C+any+funds+will+go+to+Natalie+Acosta&currency_code=USD','_blank' );"
+      >DONATE</button>
     </div>
     <div class= "col-sm-4 mt-2 mb-2">
       <h3>LOCATION </h3>

@@ -15,33 +15,39 @@
 <body>
 <!--nav 1-->
 <nav class="navbar navbar-expand" style= "background-color:#99cccc;">
-  <div class="navbar-collapse justify-content-end" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fa-solid fa-phone"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="btn btn-custom">DONATE</a>
-      </li>
-    </ul>
-  </div>
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <div class="nav-logo">
+            <img src="images/nav-logo.png" alt="Logo" style="height:100%;">
+        </div>
+        <div class="navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tel:8028781758">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:adopt@furfriends.org">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="btn btn-custom mr-2" href="https://www.paypal.com/donate/?business=WWJVQM32CZNXC&no_recurring=0&item_name=This+donate+button+has+been+set+up+for+a+school+project%2C+Fur+Friends+is+not+a+real+shelter%2C+any+funds+will+go+to+Natalie+Acosta&currency_code=USD"
+                       target="_blank">DONATE</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
 <!--nav 2-->
@@ -49,7 +55,7 @@
     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link" href="index.html">HOME</a>
@@ -63,11 +69,14 @@
             <li class="nav-item">
                 <a class="nav-link" href="adoptus.html">ADOPT US</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blog.html">BLOG</a>
+            </li>
             <li class="nav-item dropdown active" id="current-page">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     PETS
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="cats.html">CATS</a></li>
                     <li><a class="dropdown-item" href="dogs.html">DOGS</a></li>
                     <li><a class="dropdown-item" href="otherpets.html">OTHER PETS</a></li>
@@ -81,9 +90,9 @@
 
 <div class="container">
 		<div class="row mb-5 cstm-height-card">
-			<div class="col-md-4 mb-5">
-				<div class="card">
-					<img src="images/od1.jpg" class="card-img-top" alt="chihuahua yorkie mix breed dog">
+			<div class="col-md-4 mb-5 d-flex">
+				<div class="card w-100">
+					<img src="images/od1.jpg" class="card-img-top" alt="chihuahua yorkie mix breed dog lays on a bed looking serious and alert, ears perked up.">
 					<div class="card-body text-center">
 						<h3 class="card-title">OD</h3>
 						<p class="card-text">Male - Chihuahua/Yorkie - Age 9</p>
@@ -93,9 +102,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4 mb-5">
-				<div class="card">
-					<img src="images/goose1.jpg" class="card-img-top" alt="...">
+			<div class="col-md-4 mb-5 d-flex">
+				<div class="card w-100">
+					<img src="images/goose1.jpg" class="card-img-top" alt="Pomeranian with one blue and one brown eye cocks his head at the photographer and poses.">
 					<div class="card-body text-center">
 						<h3 class="card-title">GOOSE</h3>
 						<p class="card-text">Male - Pomeranian - Age 10</p>
@@ -105,9 +114,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4 mb-5">
-				<div class="card">
-					<img src="images/beau1.jpg" class="card-img-top" alt="...">
+			<div class="col-md-4 mb-5 d-flex">
+				<div class="card w-100">
+					<img src="images/beau1.jpg" class="card-img-top" alt="White Golden Retriever holds a frisbee ready to play.">
 					<div class="card-body text-center">
 						<h3 class="card-title">BEAU</h3>
 						<p class="card-text">Male - Golden Retriever - Age 9</p>
@@ -123,19 +132,20 @@
 
 <!-- footer -->
 <div class="container-fluid" style="background-color:#16594a;">
-  <div class= "row">
-    <div class= "col-sm-4 mt-2 mb-2">
-      <h3>HOURS </h3>
-      <p class="footer-p"> Walk-in & meet our animals! <br> Monday- Saturday 9-5</p>
+    <div class= "row">
+        <div class= "col-sm-4 mt-2 mb-2">
+            <h3>HOURS </h3>
+            <p class="footer-p"> Walk-in & meet our animals! <br> Monday- Saturday 9-5</p>
+        </div>
+        <div class= "col-sm-4 d-flex justify-content-center align-items-center">
+            <button class="btn btn-custom mt-2 mb-2" onclick="window.open('https://www.paypal.com/donate/?business=WWJVQM32CZNXC&no_recurring=0&item_name=This+donate+button+has+been+set+up+for+a+school+project%2C+Fur+Friends+is+not+a+real+shelter%2C+any+funds+will+go+to+Natalie+Acosta&currency_code=USD','_blank' );"
+            >DONATE</button>
+        </div>
+        <div class= "col-sm-4 mt-2 mb-2">
+            <h3>LOCATION </h3>
+            <p class= "footer-p"> 264 Browns River Road <br> Essex, Vermont</p>
+        </div>
     </div>
-    <div class= "col-sm-4 d-flex justify-content-center align-items-center">
-      <button class="btn btn-custom mt-2 mb-2">DONATE</button>
-    </div>
-    <div class= "col-sm-4 mt-2 mb-2">
-      <h3>LOCATION </h3>
-      <p class= "footer-p"> 264 Browns River Road <br> Essex, Vermont</p>
-    </div>
-  </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

@@ -1,37 +1,39 @@
 //bold the current page in nav
-(function(){
-const currentLocation = location.href;
-const navLinks = document.querySelectorAll("nav ul li a");
+(function() {
+  const currentLocation = location.href;
+  const navLinks = document.querySelectorAll("nav ul li a");
 
-for (let i = 0; i < navLinks.length; i++) {
-  if (navLinks[i].href === currentLocation) {
-    navLinks[i].classList.add("active");
+  for (let i = 0; i < navLinks.length; i++) {
+    if (navLinks[i].href === currentLocation) {
+      navLinks[i].classList.add("active");
+    }
   }
+})();
+
+
+
+//HAMBURGER MENU
+
+  // add a click event listener to the navbar toggler button
+  var navbarToggler = document.querySelector('.navbar-toggler');
+  navbarToggler.addEventListener('click', function() {
+  // get the navbar collapse element
+  var navbarCollapse = document.getElementById('navbarNav');
+
+  // toggle the collapse state of the navbar
+  if (navbarCollapse.classList.contains('show')) {
+  navbarCollapse.classList.remove('show');
+} else {
+  navbarCollapse.classList.add('show');
 }
-})();
-
-//hamburger menu
-(function(){
-$(document).ready(function(){
-  $('.navbar-toggler').click(function(){
-    $('.navbar-collapse').toggleClass('show');
-  });
 });
 })();
 
 
-//turn heart red
-// Select all heart icons on the page
-const heartIcons = document.querySelectorAll('.fa-heart');
 
-// Add a click event listener to each heart icon
-heartIcons.forEach(icon => {
-  icon.addEventListener('click', function() {
-    // Toggle the 'red-heart' class on the clicked icon
-    this.classList.toggle('red-heart');
-  });
-});
-//carousel
+
+
+//CAROUSEL
 (function() {
   var myCarousel = document.querySelector('#carouselExampleIndicators');
   var carousel = new bootstrap.Carousel(myCarousel, {
@@ -39,3 +41,28 @@ heartIcons.forEach(icon => {
     wrap: false
   });
 })();
+
+
+//FACEBOOK SHARE BUTTON
+(function() {
+  function shareOnFacebook() {
+    // get the url of the blog post/ page
+    var url = document.querySelector('.fb-share-button').getAttribute('data-href');
+
+    // open the facebook share dialog
+    FB.ui({
+      method: 'share',
+      href: url,
+    }, function(response){});
+  }
+
+  // add event listener to the button
+  var shareButton = document.querySelector('.fb-share-button');
+  shareButton.addEventListener('click', shareOnFacebook);
+})();
+
+
+
+//APPLICATION SUBMIT BUTTON SUCCESS MESSAGE
+
+

@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fur Friends</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/custom.css" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/097fa911c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!--nav 1-->
+<nav class="navbar navbar-expand" style= "background-color:#99cccc;">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <div class="nav-logo">
+      <img src="images/nav-logo.png" alt="Logo" style="height:100%;">
+    </div>
+    <div class="navbar-collapse justify-content-end">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tel:8028781758">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:adopt@furfriends.org">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </li>
+        <li class="nav-item mr-2">
+          <a class="btn btn-custom mr-2" href="https://www.paypal.com/donate/?business=WWJVQM32CZNXC&no_recurring=0&item_name=This+donate+button+has+been+set+up+for+a+school+project%2C+Fur+Friends+is+not+a+real+shelter%2C+any+funds+will+go+to+Natalie+Acosta&currency_code=USD"
+             target="_blank">DONATE</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--nav 2-->
+<nav class="navbar navbar-expand-md" style="background-color: #ffffff;">
+  <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active" id="current-page">
+        <a class="nav-link" href="index.html">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">ABOUT US</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="helpus.html">HELP US</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="adoptus.html">ADOPT US</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">BLOG</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          PETS
+        </a>
+        <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="cats.html">CATS</a></li>
+          <li><a class="dropdown-item" href="dogs.html">DOGS</a></li>
+          <li><a class="dropdown-item" href="otherpets.html">OTHER PETS</a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+<!--logo-->
+<div class="container-fluid" style="background-color:#ff914d;">
+  <div class="row justify-content-center">
+    <div class="col-md-6 text-center">
+      <img src="images/Logo.png" class="img-fluid">
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <h1> ADOPTION APPLICATION</h1>
+
+  <form id="adoptionForm">
+    <div class="form-group">
+      <label for="animalType">I want to adopt a:</label><br>
+      <input type="radio" id="cat" name="animalType" value="cat">
+      <label for="cat">Cat</label><br>
+      <input type="radio" id="kitten" name="animalType" value="kitten">
+      <label for="kitten">Kitten</label><br>
+      <input type="radio" id="dog" name="animalType" value="dog">
+      <label for="dog">Dog</label><br>
+      <input type="radio" id="puppy" name="animalType" value="puppy">
+      <label for="puppy">Puppy</label>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="adoptFor">I want to adopt the animal for:</label><br>
+      <input type="radio" id="myself" name="adoptFor" value="myself">
+      <label for="myself">Myself</label><br>
+      <input type="radio" id="myKids" name="adoptFor" value="myKids">
+      <label for="myKids">My Kids</label><br>
+      <input type="radio" id="gift" name="adoptFor" value="gift">
+      <label for="gift">Gift</label><br>
+      <input type="radio" id="other" name="adoptFor" value="other">
+      <label for="other">Other:</label>
+      <input type="text" class="form-control" id="otherReason" name="otherReason">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="animalName">I am interested in a specific animal. Please indicate the animal's name here:</label>
+      <input type="text" class="form-control" id="animalName" name="animalName">
+    </div>
+    <br>
+    <div class="form-row">
+      <div class="col">
+        <label for="firstName">First Name:</label>
+        <input type="text" class="form-control" id="firstName" name="firstName">
+      </div>
+      <br>
+      <div class="col">
+        <label for="lastName">Last Name:</label>
+        <input type="text" class="form-control" id="lastName" name="lastName">
+      </div>
+    </div>
+    <div class="form-group mt-3">
+      <label for="street">Street:</label>
+      <input type="text" class="form-control" id="street" name="street">
+    </div>
+    <br>
+    <div class="form-row">
+      <div class="col">
+        <label for="city">City:</label>
+        <input type="text" class="form-control" id="city" name="city">
+      </div>
+      <br>
+      <div class="col">
+        <label for="state">State:</label>
+        <input type="text" class="form-control" id="state" name="state">
+      </div>
+      <br>
+      <div class="col">
+        <label for="zip">Zip:</label>
+        <input type="text" class="form-control" id="zip" name="zip">
+      </div>
+    </div>
+    <br>
+    <div class="form-row">
+      <div class="col">
+        <label for="primaryPhone">Primary Phone:</label>
+        <input type="text" class="form-control" id="primaryPhone" name="primaryPhone">
+      </div>
+      <br>
+      <div class="col">
+        <label for="cellPhone">Cell phone:</label>
+        <input type="text" class="form-control" id="cellPhone" name="cellPhone">
+      </div>
+    </div>
+    <div class="form-group mt-3">
+      <label for="email">E-Mail:</label>
+      <input type="email" class="form-control" id="email" name="email">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="birthDate">Birth Date:</label>
+      <input type="date" class="form-control" id="birthDate" name="birthDate">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="driversLicense">ID (Driver's License):</label>
+      <input type="text" class="form-control" id="driversLicense" name="driversLicense">
+    </div>
+    <br>
+    <div class="form-row">
+      <div class="col">
+        <label for="currentAddressDuration">How long have you lived at current address?</label>
+        <input type="number" class="form-control" id="currentAddressDuration" name="currentAddressDuration">
+      </div>
+      <br>
+      <div class="col">
+        <label for="durationType">Choose applicable duration:</label><br>
+        <input type="radio" id="months" name="durationType" value="months">
+        <label for="months">Months</label><br>
+        <input type="radio" id="years" name="durationType" value="years">
+        <label for="years">Years</label>
+      </div>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="numAdults">How many other adults (18+) live in your home?</label>
+      <input type="number" class="form-control" id="numAdults" name="numAdults">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="numChildren">How many children?</label>
+      <input type="number" class="form-control" id="numChildren" name="numChildren">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="childrenAges">How old are the children?</label>
+      <input type="text" class="form-control" id="childrenAges" name="childrenAges">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="allergies">Does anyone in your home have allergies?</label><br>
+      <input type="radio" id="allergiesYes" name="allergies" value="yes">
+      <label for="allergiesYes">Yes</label>
+      <input type="radio" id="allergiesNo" name="allergies" value="no">
+      <label for="allergiesNo">No</label>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="homeStatus">Do you rent or own your home?</label>
+      <input type="text" class="form-control" id="homeStatus" name="homeStatus">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="petList">Please list your current pets in the home. Please indicate if spayed/neutered and age(s).</label>
+      <textarea class="form-control" id="petList" name="petList" rows="3"></textarea>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="veterinarian">Current veterinarian:</label>
+      <input type="text" class="form-control" id="veterinarian" name="veterinarian">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="newPetLocation">Where will your new pet live?</label>
+      <input type="text" class="form-control" id="newPetLocation" name="newPetLocation">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="budget">How much have you budgeted for your new pet's care and supplies?</label>
+      <input type="text" class="form-control" id="budget" name="budget">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="aloneDuration">How long will your new pet be left alone each day?</label>
+      <input type="text" class="form-control" id="aloneDuration" name="aloneDuration">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="surrendered">If you have ever surrendered a pet or been found guilty of animal abuse or neglect, please check here.</label><br>
+      <input type="checkbox" id="surrendered" name="surrendered">
+    </div>
+    <br>
+  </form>
+
+  <div class="d-flex justify-content-center mb-5">
+  <a href="adoptionformsuccess.html">
+      <button id="submitButton" type="submit" class="btn btn-custom btn-lg">SUBMIT APPLICATION</button>
+  </a>
+  </div>
+</div>
+
+
+
+
+<!-- footer -->
+<div class="container-fluid" style="background-color:#16594a;">
+  <div class= "row">
+    <div class= "col-sm-4 mt-2 mb-2">
+      <h3>HOURS </h3>
+      <p class="footer-p"> Walk-in & meet our animals! <br> Monday- Saturday 9-5</p>
+    </div>
+    <div class= "col-sm-4 d-flex justify-content-center align-items-center">
+      <button class="btn btn-custom mt-2 mb-2" onclick="window.open('https://www.paypal.com/donate/?business=WWJVQM32CZNXC&no_recurring=0&item_name=This+donate+button+has+been+set+up+for+a+school+project%2C+Fur+Friends+is+not+a+real+shelter%2C+any+funds+will+go+to+Natalie+Acosta&currency_code=USD','_blank' );"
+      >DONATE</button>
+    </div>
+    <div class= "col-sm-4 mt-2 mb-2">
+      <h3>LOCATION </h3>
+      <p class= "footer-p"> 264 Browns River Road <br> Essex, Vermont</p>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="js/javascript.js"></script>
+<!--custom JS-->
+
+
+</body>
+</html>

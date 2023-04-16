@@ -2,6 +2,7 @@ body{
   background-color: #fde9ff; //pink
 }
 
+
 h1{
   color:#16594a; //darkgreen
   font-family:'montserrat', sans-serif;
@@ -34,6 +35,20 @@ p{
   text-align:center;
 }
 
+/*NAV*/
+
+.navbar-toggler{
+  margin-right:1rem;
+
+}
+
+.fa-brands, .fa-solid {
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+
 .bg-image{
   background-image:url('/images/paws.png');
   background-size:cover;
@@ -55,13 +70,20 @@ p{
 }
 .btn-custom2{
   background-color:#99cccc;
-font-family:'montserrat', sans-serif;
+  font-family:'montserrat', sans-serif;
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.btn-custom2:hover{
+  color:black;
+}
+.btn-custom:hover{
+  color:black;
 }
 .btn{
   color:white;
 }
+
 /*NAV*/
 #current-page{
   font-weight:bold;
@@ -71,6 +93,7 @@ font-family:'montserrat', sans-serif;
 .footer-p{
   color: white;
 }
+
 
 /* animal cards*/
 .cstm-height-card .card-img-top {
@@ -84,23 +107,16 @@ font-family:'montserrat', sans-serif;
 .card-title{
   color:#16594a;
 }
-/*
-.car{
-  max-width:80%;
-  max-height:80%;
-}
 
+.nav-logo{
+  display:none;
+}
+/* MEDIA QUERIES */
 
-.carousel{
-  max-height:40vh;
-  max-width:40vw;
-  justify-content: center;
-  align-items:center;
+/* present logo on devices larger than phone*/
+@media only screen and (min-width: 768px) {
+  .nav-logo{
+    display:inline;
+  }
 
 }
-.car{
-  max-height:50vh;
-  align-items:center;
-  justify-content:center;
-}
-/*

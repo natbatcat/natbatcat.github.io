@@ -15,32 +15,38 @@
 <body>
 <!--nav 1-->
 <nav class="navbar navbar-expand" style= "background-color:#99cccc;">
-  <div class="navbar-collapse justify-content-end" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fa-solid fa-phone"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="btn btn-custom">DONATE</a>
-      </li>
-    </ul>
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <div class="nav-logo">
+      <img src="images/nav-logo.png" alt="Logo" style="height:100%;">
+    </div>
+    <div class="navbar-collapse justify-content-end">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tel:8028781758">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:adopt@furfriends.org">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </li>
+        <li class="nav-item mr-2">
+          <a class="btn btn-custom mr-2" href="https://www.paypal.com/donate/?business=WWJVQM32CZNXC&no_recurring=0&item_name=This+donate+button+has+been+set+up+for+a+school+project%2C+Fur+Friends+is+not+a+real+shelter%2C+any+funds+will+go+to+Natalie+Acosta&currency_code=USD"
+             target="_blank">DONATE</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
 
@@ -49,7 +55,7 @@
   <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+  <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="index.html">HOME</a>
@@ -63,11 +69,14 @@
       <li class="nav-item">
         <a class="nav-link" href="adoptus.html">ADOPT US</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">BLOG</a>
+      </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           PETS
         </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
           <li><a class="dropdown-item" href="cats.html">CATS</a></li>
           <li><a class="dropdown-item" href="dogs.html">DOGS</a></li>
           <li><a class="dropdown-item" href="otherpets.html">OTHER PETS</a></li>
@@ -86,13 +95,12 @@
           <h2>DONATE</h2>
           <p class="justify">Fur Friends is 100% non-profit! Donations and corporate sponsors fund 60% of our operation, and the rest is raised from our two annual events- the spring Dog Walk and fall Harvest Festival. Last year we had enough bequests to build a catio for our feline friends!</p>
         <div class="text-center">
-        <a href="..."
-          <button class="btn btn-custom">DONATE TODAY</button>
-        </a>
+          <a class="btn btn-custom" href="https://www.paypal.com/donate/?business=WWJVQM32CZNXC&no_recurring=0&item_name=This+donate+button+has+been+set+up+for+a+school+project%2C+Fur+Friends+is+not+a+real+shelter%2C+any+funds+will+go+to+Natalie+Acosta&currency_code=USD"
+             target="_blank">DONATE TODAY</a>
         </div>
       </div>
       <div class="col-sm-6">
-        <img src="images/highfive.jpg" class="img-fluid mt-5">
+        <img src="images/highfive.jpg" class="img-fluid mt-5 rounded" alt="A German Shepard high-fives a human hand.">
       </div>
       </div>
 
@@ -139,7 +147,8 @@
       <p class="footer-p"> Walk-in & meet our animals! <br> Monday- Saturday 9-5</p>
     </div>
     <div class= "col-sm-4 d-flex justify-content-center align-items-center">
-      <button class="btn btn-custom mt-2 mb-2">DONATE</button>
+      <button class="btn btn-custom mt-2 mb-2" onclick="window.open('https://www.paypal.com/donate/?business=WWJVQM32CZNXC&no_recurring=0&item_name=This+donate+button+has+been+set+up+for+a+school+project%2C+Fur+Friends+is+not+a+real+shelter%2C+any+funds+will+go+to+Natalie+Acosta&currency_code=USD','_blank' );"
+      >DONATE</button>
     </div>
     <div class= "col-sm-4 mt-2 mb-2">
       <h3>LOCATION </h3>

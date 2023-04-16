@@ -15,32 +15,38 @@
 <body>
 <!--nav 1-->
 <nav class="navbar navbar-expand" style= "background-color:#99cccc;">
-  <div class="navbar-collapse justify-content-end" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fa-solid fa-phone"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="btn btn-custom">DONATE</a>
-      </li>
-    </ul>
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <div class="nav-logo">
+      <img src="images/nav-logo.png" alt="Logo" style="height:100%;">
+    </div>
+    <div class="navbar-collapse justify-content-end">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tel:8028781758">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:adopt@furfriends.org">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </li>
+        <li class="nav-item mr-2">
+          <a class="btn btn-custom mr-2" href="https://www.paypal.com/donate/?business=WWJVQM32CZNXC&no_recurring=0&item_name=This+donate+button+has+been+set+up+for+a+school+project%2C+Fur+Friends+is+not+a+real+shelter%2C+any+funds+will+go+to+Natalie+Acosta&currency_code=USD"
+             target="_blank">DONATE</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
 
@@ -49,7 +55,7 @@
   <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+  <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="index.html">HOME</a>
@@ -63,11 +69,14 @@
       <li class="nav-item active" id="current-page">
         <a class="nav-link" href="adoptus.html">ADOPT US</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">BLOG</a>
+      </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           PETS
         </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
           <li><a class="dropdown-item" href="cats.html">CATS</a></li>
           <li><a class="dropdown-item" href="dogs.html">DOGS</a></li>
           <li><a class="dropdown-item" href="otherpets.html">OTHER PETS</a></li>
@@ -82,41 +91,13 @@
 <div class="container text-center">
   <h1 class="mt-5 mb-5">ADOPTION INFORMATION</h1>
   <h5>Before applying to adopt one of our eligible pets, please be sure to review the policy below. We don't make exceptions to the policy so please don't ask the shelter manager or staff for an exception. Thank you!</h5>
-  <a href="mailto:adopt@furfriends.org?subject=AdoptionApplication&body=Adoption Application
-
-I want to adopt a ______________. Circle One:     Cat     Kitten     Dog     Puppy
-
-I want to adopt the animal for ____________. Circle One:     Myself     My Kids    Gift    Other: _________________
-I am interested in a specific animal. Please indicate the animal's name here _________________________________.
-First Name: ________________________________________ Last Name: _______________________________________________
-Street: _________________________________________________________________________________________________________
-City: _______________________________________________ State: _________________________ Zip: _______________________
-Primary Phone: ____________________________________ Cell phone: _______________________________________________
-E-Mail: _________________________________________________________________________________________________________
-Birth Date: _________________________________________ ID (Driver's License): ______________________ State: ________
-How long have you lived at current address? ____________ Circle applicable duration:     Months    Years
-How many other adults (18+) live in your home? ____________ How many children? __________________________
-How old are the children? _____________________________________________________________________________________
-Does anyone in your home have allergies? Circle One:     Yes    No
-Do you rent or own your home? ________________________ If you rent, are you allowed to have pets? _________
-Please list your current pets in the home. Please indicate if spayed/neutered and age(s).
-1.	____________________________________Spayed Neutered Age: _______________
-2.	____________________________________Spayed Neutered Age: _______________
-3.	____________________________________Spayed Neutered Age: _______________
-4.	____________________________________Spayed Neutered Age: _______________
-5.	____________________________________Spayed Neutered Age: _______________
-Current veterinarian: _____________________________________________________________________
-Where will your new pet live? ____________________________________________________________
-How much have you budgeted for your new pet's care and supplies? __________________
-How long will your new pet be left alone each day? ______________________________________________________________
-If you have ever surrendered a pet or been found guilty of animal abuse or neglect, please check here. ________
-">
+  <a href="adoptionapplication.html">
     <button class="btn btn-custom btn-lg mt-3 shadow"> ADOPTION APPLICATION</button>
   </a>
 </div>
 
 <div>
-  <img src="images/paws.png" class="img-fluid">
+  <img src="images/paws.png" class="img-fluid" alt="white paw prints walking across the page, acting as a page divider">
 </div>
 
 <div class= "container">
@@ -125,13 +106,13 @@ If you have ever surrendered a pet or been found guilty of animal abuse or negle
     <h2>FAQs</h2>
     <div class="col-sm-8">
       <h5 class="justify">What are the Adoption Fees? </h5><p class="justify">The adoption fee is $60 for one cat/kitten and $100 for a pair. We waive adoption fees for special needs cats and cats/kittens that are adoption-sponsored.</p>
-     <h5 class="justify"> Why do you have Adoption Fees?</h5> Adoption fees are used to help defray the costs of veterinary exams, feline testing, age-appropriate distemper and rabies vaccinations, spaying/neutering, and deworming.</p>
-      <h5 class="justify"> Who Makes Adoption Decisions? </h5>The shelter manager and/or a shelter staff member with input from foster parent(s), if the cat/kitten is currently placed in a foster home, makes all final adoption decisions.</p>
-      <h5 class="justify"> Why are kittens adopted in pairs? </h5>Unless an adoptive family already has a kitten that is close in age to an adopted kitten, we require the adoption of kittens in pairs. Cats are social animals and though they love their humans, they also require feline companionship to prevent loneliness, depression and/or destructive behavior.</p>
-      <h5 class="justify"> Who can adopt kittens? </h5>We limit the adoption of kittens to adoptive families with children older than the age of six. If a family has children under the age of six, an adult cat must be selected for adoption. We have this policy because kittens are fragile and may be accidentally injured by small children. Also, we don't want children to be scratched by a kitten and develop an unnatural fear of felines.</p>
+      <h5 class="justify"> Why do you have Adoption Fees?</h5><p class="justify"> Adoption fees are used to help defray the costs of veterinary exams, feline testing, age-appropriate distemper and rabies vaccinations, spaying/neutering, and deworming.</p>
+      <h5 class="justify"> Who Makes Adoption Decisions? </h5><p class="justify">The shelter manager and/or a shelter staff member with input from foster parent(s), if the cat/kitten is currently placed in a foster home, makes all final adoption decisions.</p>
+      <h5 class="justify"> Why are kittens adopted in pairs? </h5><p class="justify">Unless an adoptive family already has a kitten that is close in age to an adopted kitten, we require the adoption of kittens in pairs. Cats are social animals and though they love their humans, they also require feline companionship to prevent loneliness, depression and/or destructive behavior.</p>
+      <h5 class="justify"> Who can adopt kittens? </h5><p class="justify">We limit the adoption of kittens to adoptive families with children older than the age of six. If a family has children under the age of six, an adult cat must be selected for adoption. We have this policy because kittens are fragile and may be accidentally injured by small children. Also, we don't want children to be scratched by a kitten and develop an unnatural fear of felines.</p>
     </div>
   <div class="col-sm-4">
-    <img src="images/graycat.jpg" class="img-fluid" >
+    <img src="images/graycat.jpg" class="img-fluid" alt="Gray cat sitting up tall relaxing in a sun beam with his eyes closed.">
   </div>
 </div>
 </div>
@@ -156,7 +137,7 @@ If you have ever surrendered a pet or been found guilty of animal abuse or negle
   </div>
 
 <div>
-  <img src="images/paws.png" class="img-fluid">
+  <img src="images/paws.png" class="img-fluid rounded" alt="Paws running across the screen to divide the page.">
 </div>
 
 <div class= "container">
@@ -165,21 +146,22 @@ If you have ever surrendered a pet or been found guilty of animal abuse or negle
     <h2>FAQs</h2>
     <div class="col-sm-8">
     <p class="justify">
-      <strong>What are the Adoption Fees? </strong><br>The adoption fee is $150 for one dog/puppy. We waive adoption fees for special needs canines and dogs/puppies that are adoption-sponsored.<br><br>
-      <strong>Why do you have Adoption Fees?</strong> <br>Adoption fees are used to help defray the costs of veterinary exams, age-appropriate vaccinations, spaying/neutering, and obedience training.<br><br>
-      <strong>Who Makes Adoption Decisions? </strong><br>The shelter manager and/or a shelter staff member with input from foster parent(s), if the dog/puppy is currently placed in a foster home, makes all final adoption decisions.<br><br>
-      <strong>Who can adopt puppies?</strong> <br>We limit the adoption of puppies to adoptive families with children older than the age of four. We will not adopt to a family that doesn't have at least one family member home throughout the day and/or that currently owns a cat or dog that is not spayed or neutered.<br><br>
-      <strong>What should I consider when I'm thinking about adopting a dog or puppy?</strong><br> You should consider the size and age of the dog, but also its temperament and compatibility. You should also consider energy level and whether the dog has any special needs. Do a little research before falling in love with a dog at the shelter so that you know the dog will be right for you and your family's lifestyle. Remember. adoption is a lifelong commitment.</p>
+      <h5 class="justify">What are the Adoption Fees? </h5>
+      <p class="justify">The adoption fee is $150 for one dog/puppy. We waive adoption fees for special needs canines and dogs/puppies that are adoption-sponsored.</p>
+      <h5 class="justify">Why do you have Adoption Fees?</h5> <p class="justify">Adoption fees are used to help defray the costs of veterinary exams, age-appropriate vaccinations, spaying/neutering, and obedience training.</p>
+      <h5 class="justify">Who Makes Adoption Decisions? </h5><p class="justify">The shelter manager and/or a shelter staff member with input from foster parent(s), if the dog/puppy is currently placed in a foster home, makes all final adoption decisions.</p>
+      <h5 class="justify">Who can adopt puppies?</h5> <p class="justify">We limit the adoption of puppies to adoptive families with children older than the age of four. We will not adopt to a family that doesn't have at least one family member home throughout the day and/or that currently owns a cat or dog that is not spayed or neutered.</p>
+      <h5 class="justify">What should I consider when I'm thinking about adopting a dog or puppy?</h5><p class="justify"> You should consider the size and age of the dog, but also its temperament and compatibility. You should also consider energy level and whether the dog has any special needs. Do a little research before falling in love with a dog at the shelter so that you know the dog will be right for you and your family's lifestyle. Remember. adoption is a lifelong commitment.</p>
     </div>
     <div class="col-sm-4">
-      <img src="images/waffles2.jpg" class="img-fluid">
+      <img src="images/waffles2.jpg" class="img-fluid rounded" alt="Red Heeler/ Mountain Fiest mixed breed dog on alert outside on a sunny day.">
     </div>
   </div>
 </div>
 <div class= "container">
     <h2>POLICY</h2>
-      <p class="justify"><strong>Those who wish to adopt a dog/puppy agree to the following until the dog/puppy has lived its natural life.</strong><br>
-        1.	You agree, if you rent your home or are subject to association rules, that your lease or by-laws allow you to have dogs. If you move, you commit to finding a new home where dogs are allowed.<br>
+  <h5 class="justify">Those who wish to adopt a dog/puppy agree to the following until the dog/puppy has lived its natural life.</h5>
+       <p class="justify"> 1.	You agree, if you rent your home or are subject to association rules, that your lease or by-laws allow you to have dogs. If you move, you commit to finding a new home where dogs are allowed.<br>
         2.	You agree to spay/neuter your dog/puppy if it is not spayed/neutered at the time of adoption.<br>
         3.	You agree to appropriately care for your adopted dog/puppy. This care will include annual checkups and appropriate vaccinations.<br>
         4.	You agree that the shelter manager and/or a member of the shelter staff may visit your home to check on the dog/puppy to ensure the adoption policy is being followed.<br>
@@ -203,7 +185,8 @@ If you have ever surrendered a pet or been found guilty of animal abuse or negle
       <p class="footer-p"> Walk-in & meet our animals! <br> Monday- Saturday 9-5</p>
     </div>
     <div class= "col-sm-4 d-flex justify-content-center align-items-center">
-      <button class="btn btn-custom mt-2 mb-2">DONATE</button>
+      <button class="btn btn-custom mt-2 mb-2" onclick="window.open('https://www.paypal.com/donate/?business=WWJVQM32CZNXC&no_recurring=0&item_name=This+donate+button+has+been+set+up+for+a+school+project%2C+Fur+Friends+is+not+a+real+shelter%2C+any+funds+will+go+to+Natalie+Acosta&currency_code=USD','_blank' );"
+      >DONATE</button>
     </div>
     <div class= "col-sm-4 mt-2 mb-2">
       <h3>LOCATION </h3>
