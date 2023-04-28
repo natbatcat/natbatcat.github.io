@@ -2,6 +2,17 @@ body{
   background-color: #fde9ff; //pink
 }
 
+html, body{
+  height: 100%;
+  margin: 0;
+  padding:0;
+}
+
+/* so the footer sticks to the bottom*/
+.page-wrapper{
+  display: flex;
+  flex-direction: column;
+}
 
 h1{
   color:#16594a; //darkgreen
@@ -34,6 +45,13 @@ p{
   font-family:'Lato', sans-serif;
   text-align:center;
 }
+
+.custom-gutter > [class^="col-"],
+.custom-gutter > [class*=" col-"] {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
 
 /*NAV*/
 
